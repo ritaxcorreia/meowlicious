@@ -28,12 +28,17 @@ function addCat() {
             cats.innerHTML = '';
             cats.appendChild(img);
 
-
-            // stops showing loading spinner
             spinner.classList.remove("show");
             cats.classList.add("show");
         });
 }
+
+// // stops showing loading spinner
+// cats.addEventListener("load", function() {
+//     spinner.classList.remove("show");
+//     cats.classList.add("show");
+// })
+
 
 document.querySelector('.add-cat').addEventListener("click", addCat);
 
@@ -51,7 +56,7 @@ function selectBreed() {
             return response.json();
         })
         .then(function(data) {
-            // console.log('data', data);
+            console.log('data', data);
 
             // Create an <option> for every breed
             data.forEach(function(breed) {
