@@ -4,8 +4,14 @@ const RANDOMCAT_URL = "https://api.thecatapi.com/v1/images/search?limit=100&orde
 
 const cats = document.querySelector('.cats');
 
+const spinner = document.querySelector('.spinner');
+
 function addCat() {
-    //show loading spinner
+    //shows loading spinner
+    spinner.classList.add("show");
+    cats.classList.remove("show");
+
+    //fetches cat images from CatAPI and randomises image that will be shown
     fetch(RANDOMCAT_URL)
         .then(function(response) {
             return response.json();
@@ -23,7 +29,9 @@ function addCat() {
             cats.appendChild(img);
 
 
-            // stop showing loading spinner
+            // stops showing loading spinner
+            spinner.classList.remove("show");
+            cats.classList.add("show");
         });
 }
 
