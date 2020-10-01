@@ -77,14 +77,35 @@ h2 {
     align-items: center;
 }
 
-.spinner {
-    margin: auto;
-}
-
 .cat-breeds {
     font-family: 'Fredoka One', cursive;
     border-radius: 3px;
     font-size: 0.8em;
     padding: 8px;
     width: 180px;
+}
+
+
+/* Loading spinner */
+
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.spinner {
+    font-size: 50px;
+    animation: 2s spin linear infinite;
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+
+.cats {
+    display: none;
+}
+
+.show {
+    display: block;
 }
