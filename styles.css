@@ -183,3 +183,11 @@ h3 {
     opacity: 1;
     right: 0;
 }
+
+.cat-img {
+    max-width: 400px;
+}
+
+a {
+    text-decoration: none;
+}
