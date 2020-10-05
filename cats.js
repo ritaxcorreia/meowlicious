@@ -25,6 +25,7 @@ function addCat() {
             const img = document.createElement("img");
             img.src = cat.url;
             img.alt = "Cute kitten";
+            img.classList.add("random-cats-img");
             cats.innerHTML = '';
             cats.appendChild(img);
 
@@ -122,4 +123,23 @@ breeds.addEventListener("change", function(event) {
 
     // fetch and show the image selectedBreed.id
 
+    // first make sure while this is loading that the old image is gone
+    document.querySelector('.cat-img').src = '';
+
+    // now go fetch the image url
+    fetch(`https://api.thecatapi.com/v1/images/search?breed_id=${selectedBreed.id}`)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            // data contains an array of objects
+            console.log(data);
+
+            // we'll use the first element of the array as we only need one image
+            const cat = data[0];
+
+            // set the cat image to the cat.url
+            const breedImage = document.querySelector('.cat-img');
+            breedImage.src = cat.url;
+        });
 });
