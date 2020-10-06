@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #AEFFD1;
     justify-content: center;
@@ -91,6 +95,9 @@ h2 {
 
 .random-cats-img {
     max-width: 100%;
+    border-radius: 5px;
+    padding: 10px 4px;
+    margin: auto;
 }
 
 .cat-breeds {
@@ -200,8 +207,22 @@ h3 {
 
 .cat-img {
     max-width: 400px;
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.footer {
+    flex-shrink: 0;
+    position: sticky;
+    font-size: 0.7em;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
