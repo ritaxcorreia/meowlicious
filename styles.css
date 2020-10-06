@@ -236,14 +236,14 @@ a:hover {
 
 @media screen and (max-width: 400px) {
     .cat-img {
-        max-width: 150px;
+        max-width: 120px;
         height: auto;
     }
 }
 
 @media screen and (max-width: 430px) {
     .cat-img {
-        max-width: 170px;
+        max-width: 150px;
         height: auto;
     }
 }
