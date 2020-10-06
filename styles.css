@@ -264,7 +264,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
     .cat-img {
-        max-width: 300px;
+        max-width: 350px;
         height: auto;
     }
 }
