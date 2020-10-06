@@ -230,35 +230,41 @@ a:hover {
 @media screen and (max-width: 350px) {
     .cat-img {
         max-width: 120px;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 400px) {
     .cat-img {
         max-width: 150px;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 430px) {
     .cat-img {
         max-width: 170px;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 480px) {
     .cat-img {
         max-width: 200px;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 600px) {
     .cat-img {
         max-width: 250px;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
     .cat-img {
         max-width: 300px;
+        height: auto;
     }
 }
