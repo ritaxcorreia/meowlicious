@@ -227,14 +227,14 @@ a:hover {
     padding-bottom: 5px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .cat-img {
-        max-width: 250px;
+        max-width: 200px;
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .cat-img {
-        max-width: 350px;
+        max-width: 200px;
     }
 }
