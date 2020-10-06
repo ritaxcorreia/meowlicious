@@ -229,12 +229,12 @@ a:hover {
 
 @media (max-width: 480px) {
     .cat-img {
-        max-width: 200px;
+        max-width: 100px;
     }
 }
 
 @media (max-width: 768px) {
     .cat-img {
-        max-width: 300px;
+        max-width: 100px;
     }
 }
