@@ -229,6 +229,6 @@ a:hover {
 
 @media (max-width: 480px) {
     .cat-img {
-        max-width: 300px;
+        max-width: 200px;
     }
 }
