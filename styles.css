@@ -232,3 +232,9 @@ a:hover {
         max-width: 200px;
     }
 }
+
+@media (max-width: 768px) {
+    .cat-img {
+        max-width: 300px;
+    }
+}
