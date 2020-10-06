@@ -226,3 +226,9 @@ a:hover {
     padding-top: 10px;
     padding-bottom: 5px;
 }
+
+@media (max-width: 480px) {
+    .cat-img {
+        max-width: 300px;
+    }
+}
